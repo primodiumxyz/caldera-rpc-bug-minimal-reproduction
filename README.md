@@ -12,7 +12,7 @@ When creating multiple `publicClient.watchEvents` over the same client, it happe
 
 ## Reproduction
 
-The [./packages/client/src/App.tsx](App) contains the logic for the reproduction. It just creates both a `publicClient.watchEvents` and a `publicClient.watchBlocks` listener. The first one will increment whenever it receives an event, and the second one will increment whenever it receives a block that contains some logs. The increment function is called every 10 seconds (and you can call it manually on the page).
+The [App](./packages/client/src/App.tsx) contains the logic for the reproduction. It just creates both a `publicClient.watchEvents` and a `publicClient.watchBlocks` listeners. The first one will increment whenever it receives an event, and the second one will increment whenever it receives a block that contains some logs. The contract `increment` function is called every 10 seconds (and you can call it manually on the page).
 
 ## How to run
 
